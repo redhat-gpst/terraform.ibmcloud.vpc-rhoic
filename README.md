@@ -1,4 +1,4 @@
-# terraform.ibmcloud.rhoic
+# terraform.ibmcloud.vpc-rhoic
 Terraform templates for building a single zone RHOIC cluster and the required VPC and Storage prerequisites.
 
 If you want this is two separate steps then there are repositories for that:
