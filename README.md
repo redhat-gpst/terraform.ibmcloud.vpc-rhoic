@@ -7,6 +7,11 @@ If you want this is two separate steps then there are repositories for that:
 
 # Using the templates
 
+The one variable that has to be passed is `ibmcloud_api_key`. The one variable I recommend passing, or checking 
+anyway, is `cluster_version`. The available versions can be found using the CLI command `ibmcloud oc versions` 
+or by connecting to the [IBM Cloud Kubernetes Versions API](https://containers.cloud.ibm.com/global/v1/versions)
+with curl or a browser (no authentication needed).
+
 ## With the terraform CLI
 
 ```

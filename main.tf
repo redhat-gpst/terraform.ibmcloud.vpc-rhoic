@@ -28,10 +28,11 @@ resource "ibm_is_subnet" "rhpds" {
 }
 
 resource "ibm_resource_instance" "cos_instance" {
-  name     = var.cos_name
-  service  = "cloud-object-storage"
-  plan     = "standard"
-  location = "global"
+  name              = var.cos_name
+  service           = "cloud-object-storage"
+  plan              = "standard"
+  location          = "global"
+  resource_group_id = data.ibm_resource_group.rhpds.id
 }
 
 resource "ibm_container_vpc_cluster" "rhpds" {
