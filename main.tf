@@ -43,7 +43,7 @@ resource "ibm_container_vpc_cluster" "rhpds" {
   worker_count      = var.cluster_worker_count
   resource_group_id = data.ibm_resource_group.rhpds.id
   cos_instance_crn  = ibm_resource_instance.cos_instance.id
-  wait_till         = "IngressReady"
+  wait_till         = "OneWorkerNodeReady"
   zones {
     subnet_id = ibm_is_subnet.rhpds.id
     name      = local.ZONE
