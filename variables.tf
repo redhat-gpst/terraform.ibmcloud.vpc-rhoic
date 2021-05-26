@@ -39,7 +39,7 @@ variable "cluster_name" {
 }
 
 variable "cluster_version" {
-  default = "4.6.23_openshift"
+  default = "4.6.28_openshift"
   description = "Openshift Version for RHOIC Cluster"
 }
 
